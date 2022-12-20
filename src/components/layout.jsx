@@ -1,10 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+require('../style.scss');
+// require('../global.scss');
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
+
+  // console.log(children);
 
   if (isRootPath) {
     header = (
@@ -21,9 +26,9 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
+    <div className="container mx-auto max-w-3xl pt-8 min-h-screen flex flex-col justify-between" data-is-root-path={isRootPath}>
+      {/* <header className="global-header">{header}</header> */}
+      <main className="px-4">{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

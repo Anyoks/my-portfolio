@@ -9,19 +9,35 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Dennis portfolio site`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Dennis Mokaya Orina`,
+      summary: `who lives and works in Malindi building useful things.`,
+      social: {
+        email: `mailto:dennorina@gmail.com`,
+        twitter: `https://twitter.com/denn_orina`,
+        github: `https://github.com/anyoks`,
+        linkedin: `https://www.linkedin.com/in/denn-mokaya-54638868/`
+      },
+      location: `Malindi, Kenya`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `My portfolio site`,
+    siteUrl: `https://dennorina.netlify.app/`,
+   
+    
   },
   plugins: [
     `gatsby-plugin-image`,
+    // 'gatsby-plugin-postcss', 
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js')
+        ],
+      },
+    }, 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -102,7 +118,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Dennis portfolio site RSS Feed",
           },
         ],
       },
@@ -110,7 +126,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Dennis portfolio site`,
         short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -118,7 +134,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
       },
     },
   ],

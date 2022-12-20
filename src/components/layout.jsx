@@ -30,6 +30,7 @@ const Layout = ({ location, title, children }) => {
       {/* <header className="global-header">{header}</header> */}
       <main className="px-4">{children}</main>
       <footer>
+        Designed and developed by Dennis Mokaya Orina.
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>

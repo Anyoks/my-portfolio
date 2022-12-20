@@ -29,8 +29,8 @@ const Layout = ({ location, title, children }) => {
     <div className="container mx-auto max-w-3xl pt-8 min-h-screen flex flex-col justify-between" data-is-root-path={isRootPath}>
       {/* <header className="global-header">{header}</header> */}
       <main className="px-4">{children}</main>
-      <footer>
-        Designed and developed by Dennis Mokaya Orina.
+      <footer class="border-t-2 border-gray-200 pb-8 pt-4 mx-4 text-sm text-gray-700">
+        Designed and developed by Dennis Mokaya Orina. <br/>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>

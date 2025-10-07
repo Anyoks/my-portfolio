@@ -4,21 +4,20 @@ order: 3
 ---
 
 
-<div class="flex mt-12">
-  <div class="w-20 flex-grow-0 flex-shrink-0 media-col pt-2">
-    <img  class="mx-auto w-full block w-4/12 h-40 rounded-lg"  src="./uon-logo.jpg" />
-    <!-- <img  class="mx-auto w-full block w-4/12 h-40 rounded-lg"  alt="art cover" loading="lazy" src='./uon-logo.png' /> -->
-  </div>
-  <div>
-    <h3 class="text-2xl">Bachelor of Science (BSc), Computer Science</h3>
-    <small class="text-xs block text-gray-700">University of Nairobi</small>
-    <small class="text-xs block text-gray-700 mb-4">2010 – 2014</small>
-  </div>
-</div>
+## 🎓 **Education**
 
-I studied various core concepts of programming and computer science, such as algorithms, database, programming languages and artificial intelligence, while my focus was Software Technologies & Intelligent Systems. During this time, I learnt to code in C++, Java, HTML, JavaScript and SQL, developing various projects and applications, oftentimes integrating SQL databases. For my thesis, developed an Automatic number plate recognition system for Kenyan number plates in C++. The goal was to apply lessons learnt in machine learning and artificial intelligence to enable the government to keep surveillance on the highways. 
+**B.Sc. Computer Science**, University of Nairobi
+📆 *October 2010 – October 2014*
 
-<br>
+* Built an **Automatic Number Plate Recognition system in C++** using machine learning and AI principles.
+
+**Diploma in Computer Science**, University of Nairobi
+📆 *October 2010 – October 2012*
+
+* Built **MedVerify**, an SMS-based counterfeit drug verification system using serial numbers.
+
+
+*Last updated: 2025*
     
 <!-- component -->
 
